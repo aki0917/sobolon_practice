@@ -1,0 +1,109 @@
+
+/* =============================================
+mixins
+============================================= */
+//マップ型変数breakpointsを定義
+$breakpoints: (
+//キー　　値
+ 'sm': 'screen and (max-width: 767px)', 
+ 'md': 'screen and (min-width: 768px)', 
+) !default;
+
+//メディアクエリ用のmixinを定義。デフォ値はmd
+@mixin mq($breakpoint: md) {
+//map-get(マップ型変数, キー)で値を取得
+  @media #{map-get($breakpoints, $breakpoint)} {
+    //この中をカスタムできる
+    @content;
+  }
+}
+
+/* =============================================
+colors
+============================================= */
+$primary-color: #3EA1D1;
+$font-color: #333;
+
+/* =============================================
+common -全体のスタイル
+============================================= */
+@include mq(sm) {
+  .is-pc {
+    display: none;
+  }
+}
+
+@include mq(md) {
+  .is-sp {
+    display: none;
+  }
+}
+
+body {
+  font-size: 16px;
+  color: $font-color;
+  font-family: "ヒラギノ明朝 ProN, serif";
+  line-height: 1.6875;
+}
+
+img {
+  width: 100%;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: content-box;
+}
+
+/* header
+============================================= */
+
+.header {
+  background: #fff;
+  position: fixed;  //上部に固定する
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  width: 120px;
+}
+
+.header-nav {
+  margin-left: auto;
+}
+
+.header-nav-list {
+  display: flex;
+}
+
+.header-nav-item {
+  & + & {
+    margin-left: 46px;
+  }
+}
+
+.header-nav-item-link {
+  display: block;
+  color: $font-color;
+  height: 70px;
+  line-height: 70px;
+  letter-spacing: .1em; //文字間隔
+}
+
+/* =============================================
+main common
+============================================= */
+
+.main  {
+  padding-top: 70px;
+}

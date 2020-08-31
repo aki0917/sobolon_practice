@@ -315,3 +315,125 @@ main common
 .about-text {
   margin-top: 28px;
 }
+
+/* products
+--------------------------------------------------------*/
+
+.products {
+  max-width: 940px;
+}
+
+.products-list {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-item {
+  flex: 0 0 27.6%;
+}
+
+.products-item-link {
+  display: block;
+  color: $font-color;
+  font-size: 14px;
+}
+
+.products-item-body {
+  margin-top: 22px;
+}
+
+.products-item-cost {
+  color: #989898;
+  margin-top: 10px;
+}
+
+.products-footer {
+  text-align: center;
+  margin-top: 44px;
+}
+
+/* news
+--------------------------------------------------------*/
+
+.news {
+  max-width: 1040px;
+}
+
+.news-list {
+  margin-top: 28px;
+}
+
+.news-item {
+  border-bottom: solid 1px #e0e0e0;
+}
+
+.news-item-link {
+  display: flex;
+  align-items: center;
+  color: $font-color;
+  font-size: 14px;
+  padding: 22px 0;
+}
+
+.news-item-header {
+  flex: 0 0 260px;
+}
+
+.news-item-body {
+  flex: 0 1 100%;
+  margin-left: 40px;
+}
+
+.news-item-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 4px;
+
+}
+
+.news-item-text {
+  color: #888;
+  margin-top: 16px;
+  line-height: 1.74143;
+}
+
+.news-footer {
+  text-align: center;
+  margin-top: 48px;
+}
+
+/* concept2
+--------------------------------------------------------*/
+
+.concept2-inner {
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.concept2-picture {
+  flex: 0 0 50%;
+}
+
+.concept2-message {
+  flex: 0 1 50%;
+  margin-right: 6.6667%;
+}
+
+.concept2-message-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.concept2-message-text {
+  margin-top: 30px;
+}
+
+/* contact
+--------------------------------------------------------*/
+
+.contact {
+  background: url(../img/contact.png) center center /cover;
+}

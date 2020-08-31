@@ -228,3 +228,64 @@ main common
 .top-message-text {
   margin-top: 18px;
 }
+
+/* concept
+============================================= */
+
+.concept-inner {
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.concept-picture {
+  flex: 0 0 50%;
+}
+
+.concept-message {
+  flex: 0 1 50%;
+  margin-left: 6.6667%;
+}
+
+.concept-message-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.concept-message-text {
+  margin-top: 36px;
+}
+
+/* feature
+============================================= */
+
+.feature-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+}
+
+.feature-item {
+  flex: 0 0 28.3333%;
+}
+
+.feature-item-link {
+  display: block;
+  color: $font-color;
+  background: #fff;
+  box-shadow: 3px 3px 15px rgba(96, 96, 96, 0.16);
+}
+
+.feature-item-body {
+  text-align: center;
+  font-weight: bold;
+  padding: 26px 12px;
+}
+
+/* about
+============================================= */
+
+.about {
+  color: #fff;
+  background: url(); 
+}

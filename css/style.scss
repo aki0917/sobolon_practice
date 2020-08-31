@@ -287,5 +287,31 @@ main common
 
 .about {
   color: #fff;
-  background: url(); 
+  background: url(../img/bg.png) center center / cover; 
+  position: relative;
+  padding: 120px 0;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.12);
+  }
+}
+
+.about-inner {
+  position: relative;
+}
+
+.about-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.about-text {
+  margin-top: 28px;
 }
